@@ -1,0 +1,8 @@
+
+<div [ngClass]="afterSomeTime?'jumping-animation is-inverted':'body_elem2'" >
+    <div [ngClass]="afterSomeTime?'jumping-animation-logo is-in':'jumping-animation-logo'" >
+        <span [ngClass]="afterSomeTime?'is-in':''" >Rabo</span>
+        <span [ngClass]="afterSomeTime?'is-in':''">Bank</span>
+    </div>
+    <div *ngIf="afterSomeTimeHide" class="jumping-animation-progress is-loading"></div>
+</div>

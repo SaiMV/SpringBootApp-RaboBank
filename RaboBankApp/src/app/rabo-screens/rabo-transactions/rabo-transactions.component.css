@@ -1,0 +1,12 @@
+robo-list-table{
+    margin-top: 20px;
+    float: left;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+rabo-dropdown{
+    margin-top: 40px;
+    float: left;
+}

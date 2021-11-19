@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr >
+      <th *ngFor="let items of tableConfig">{{items.headerName}}</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="!tableDataFinder">
+    
+    <tr *ngFor="let items of tableData">
+        <td  *ngFor="let item of tableConfig">{{items[item.fieldName]}}</td>
+    </tr>
+  </tbody>
+  <tbody *ngIf="tableDataFinder">
+    
+      <tr *ngFor="let items of tableData">
+        <td  *ngFor="let item of tableConfig">{{items[tableDataFinder][item.fieldName]}}</td>
+
+      </tr>
+    </tbody>
+</table>

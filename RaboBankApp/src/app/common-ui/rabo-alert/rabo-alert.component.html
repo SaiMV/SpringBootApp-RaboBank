@@ -1,0 +1,27 @@
+
+<div class="alert-main-container"  >
+    <div class="alert-container"  >
+      <div class="alert-header">
+        <div class="alert-text alert-header-text">
+            {{alertService.alertModel.alertHeader}}
+        </div>
+        <div class="alert-close" (click)="closeAlert(false)">
+  
+        </div>
+      </div>
+      <div class="alert-content-main-area">
+          <div class="alert-content-area" >
+              {{alertService.alertModel.alertMsg}}
+          </div>
+      </div>
+      <div class="alert-footer adjust-buttons">
+        <button class="button-common" (click)="closeAlert(true)">
+          OK
+        </button>
+        <button class="button-common" (click)="closeAlert(false)" >
+          Cancel
+        </button>
+      </div>
+    </div>
+    </div>
+  

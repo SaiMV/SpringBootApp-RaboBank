@@ -1,0 +1,14 @@
+<div>
+  <span>{{dropDownHeader}}</span>
+</div>
+<div class="drop-down-container">
+    <div class="drop-down-text-container" (click)="toggleDropDown = !toggleDropDown">
+    <div class="drop-down-text" >{{getText()}}</div>
+    <div [ngClass]="toggleDropDown?'active drop-down-arrow': 'drop-down-arrow'"></div>
+    </div>
+    <div *ngIf = "toggleDropDown" class="active drop-down-list-container">
+        <ul >
+            <li *ngFor = "let values of dropDownData" (click)="selectionChanged(values)"> {{values}} </li>
+        </ul>
+    </div>
+</div>

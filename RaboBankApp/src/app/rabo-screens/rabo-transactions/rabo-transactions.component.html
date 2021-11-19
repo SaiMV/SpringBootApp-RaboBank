@@ -1,0 +1,18 @@
+<div class="content-container">
+    <!-- drop down shows the types of files. selecting the dropdown will fetch the
+         invalid transacrion data from the server -->
+    <rabo-dropdown [defaultSelectedValue]="defaultDropDownValue" [dropDownHeader]="secondDropHeader"
+        [dropDownData]="dropDownData" (selectionHasChanged)="getInvalidTransactionList($event)"></rabo-dropdown>
+    <!-- Table used to showing invalid transaction data of specific file type -->
+    <robo-list-table [tableConfig]="tableConfig" [tableDataFinder]="tableDataFinder"
+        [tableData]="invalidTransactionRespData">
+    </robo-list-table>
+    <!-- drop down shows the types of files. selecting the dropdown will fetch the whole 
+        file data from the server -->
+    <rabo-dropdown [defaultSelectedValue]="defaultDropDownValue" [dropDownHeader]="firstDropHeader"
+        [dropDownData]="dropDownData" (selectionHasChanged)="getTransactionList($event)"></rabo-dropdown>
+    <!-- Table used to showing all data of specific file type -->
+    <robo-list-table [tableConfig]="tableConfig" [tableData]="transactionRespData">
+    </robo-list-table>
+
+</div>

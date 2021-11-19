@@ -1,0 +1,66 @@
+* {
+    -webkit-tap-highlight-color: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -khtml-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width:100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #4b95cc;
+}
+
+.content-container {
+    position: absolute;
+    min-height: calc(100% - 60px);
+    height: calc(100% - 60px);
+    width: 100%;
+    top: 60px;
+    overflow: auto;
+}
+
+rabo-nav-header {
+    padding: 0px;
+    margin: 0px;
+}
+
+page-not-found,
+rabo-login,
+rabo-home,
+rabo-transactions {   
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    height: calc(100% - 0px);
+    width: 100%;
+    float: left;
+    background-color: #4b95cc;
+    color: #fff;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+rabo-alert {
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 100%;
+    z-index: 1000000;
+    background: rgba(37, 37, 37, 0.47);
+}

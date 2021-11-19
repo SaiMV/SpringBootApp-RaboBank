@@ -1,0 +1,8 @@
+<!-- Rabo application navigation header -->
+<rabo-nav-header *ngIf="showNavMenuBar && afterSomeTime"></rabo-nav-header> 
+<!-- Rabo application splash screen  -->
+<splash-screen *ngIf="!afterSomeTime"></splash-screen>
+<!-- Rabo application router outlet to load pages -->
+<router-outlet *ngIf=" afterSomeTime"></router-outlet>
+<!-- Rabo application aler messgae -->
+<rabo-alert *ngIf="alertService.showAlertMsg"></rabo-alert>
